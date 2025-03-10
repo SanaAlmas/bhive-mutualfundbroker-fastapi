@@ -15,6 +15,7 @@ This is a **FastAPI-based Mutual Fund Broker Application** that allows users to 
 - ✅ **NAV Updates** (Fetch & Store NAV details from RapidAPI)
 - ✅ **Celery + Redis for Background Tasks** (NAV Updates Every Hour)
 - ✅ **Database with MySQL** (SQLAlchemy & Alembic Migrations)
+- ✅ **Postman Collection for API Testing**
 
 ---
 
@@ -91,6 +92,26 @@ celery -A src.scheduler.nav_updator worker --loglevel=info
 ```sh
 celery -A src.scheduler.nav_updator beat --loglevel=info
 ```
+
+---
+
+## **📬 Postman Collection for API Testing**
+To test the API using **Postman**, follow these steps:
+
+### **1️⃣ Download the Postman Collection**
+
+The Postman collection is available in the repository:  
+📂 [Postman Collection](https://github.com/SanaAlmas/bhive-mutualfundbroker-fastapi/bhive_postman_collection.json)
+
+### **2️⃣ Import the Collection in Postman**
+
+#### **Import via File**
+
+1. Download the **JSON file** from GitHub.
+2. Open **Postman**.
+3. Click **"Import"** → **"Upload Files"**.
+4. Select the **downloaded JSON file**.
+5. Click **"Import"**.
 
 ---
 
